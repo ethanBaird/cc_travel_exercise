@@ -90,14 +90,17 @@ nav li a:hover {
 /* Create a block that targets the search-form class and give it a display of flex */
 .search-form {
   display: flex;
+  width: auto;
+  justify-content: flex-start;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 /* Notice that each form input is wrapped in a div */
 /* Create a block that targets the input-field class and apply a suitable width and margin */
 .input-field {
-  width: 33%;
+  width: auto;
   margin-right: 5px;
 
 }
@@ -107,7 +110,7 @@ nav li a:hover {
 
 input {
   /* Style the form input elements using width, height, padding-left and border-radius */
-  width: 200px;
+  width: 300px;
   height: 2rem;
   padding-left: 10px;
   border-radius: 5px;
@@ -118,7 +121,8 @@ input {
   /* Select elements are not imput elements! Therefore we've given the <select> element it's own class  */
   /* They are notoriously difficult to style with css */
   /* In this case you can use width, height, font-size, color, border and border-radius */
-  width: 200px;
+  padding-left: 10px;
+  width: 300px;
   height: 2rem;
   border-radius: 5px;
   border: 1px;
@@ -205,6 +209,7 @@ img {
   margin: 16px;
   overflow: hidden;
   text-align: center;
+  border-radius: 5px;
 }
 
 .footer {
